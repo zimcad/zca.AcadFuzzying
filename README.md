@@ -8,3 +8,8 @@ die Zeichnung unpräzise zu machen. Die Zeichnung kann dann geöffnet und auch b
 aber ist eigentlich für eine weitere Bearbeitung unbrauchbar. 
 
 Bisher sind nur Linien und Blöcke als Elemente eingebunden, weitere sollen folgen
+
+Vorgehensweise beim Weitergeben von DWG Zeichnungen
+ Layout als Modell exportieren
+ erstellte DWG öffnen
+ FUZZY aufrufen
