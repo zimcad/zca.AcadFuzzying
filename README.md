@@ -9,7 +9,7 @@ aber ist eigentlich für eine weitere Bearbeitung unbrauchbar.
 
 Bisher sind nur Linien und Blöcke als Elemente eingebunden, weitere sollen folgen
 
-Vorgehensweise beim Weitergeben von DWG Zeichnungen
- Layout als Modell exportieren
- erstellte DWG öffnen
- FUZZY aufrufen
+Vorgehensweise beim Weitergeben von DWG Zeichnungen:
+ Layout als Modell exportieren,
+ erstellte DWG öffnen,
+ FUZZY aufrufen.
