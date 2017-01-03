@@ -1,4 +1,6 @@
-(defun fzwert(); gibt eine zufällige realzahl unter 1 zurück
+(load "zca-biblio-tools")
+
+(defun fzwert(); gibt eine zufÃ¤llige realzahl unter 1 zurÃ¼ck
   (setq x (/ (zca:random-number) 99.85654))
   (/ (- x (fix x)) 100.0)
 )
@@ -25,9 +27,9 @@
 
 ; Vorgehensweise beim Weitergeben von DWG Zeichnungen
 ; Layout als Modell exportieren
-; erstellte DWG öffnen
+; erstellte DWG Ã¶ffnen
 ; FUZZY aufrufen
-; Alle Elemente wählen, Farbe und Linienstärke auf weiss bzw. 0.00 ändern
+; Alle Elemente wÃ¤hlen, Farbe und LinienstÃ¤rke auf weiss bzw. 0.00 Ã¤ndern
 
   (setq as '() index 0);  fuzzyx 0.16 fuzzyy 0.9 fuzzyz 0.35) 
   (setq as (ssget "X"))
@@ -42,9 +44,9 @@
 	((= elen "LINE") (fz:edit_line ed)); AP und EP schieben
 ;	((= elen "PLINE") (fz:edit_pline ed)); alle Segmentpunkte verschieben
 ;	((= elen "TEXT") (fz:edit_text ed)); Drehwinkel 
-;	((= elen "CIRCLE") (fz:edit_circle ed)); Radius ändern
+;	((= elen "CIRCLE") (fz:edit_circle ed)); Radius Ã¤ndern
 	((= elen "INSERT") (progn
-	     (fz:edit_insert ed); Einfügepunkt ändern, dann auflösen
+	     (fz:edit_insert ed); EinfÃ¼gepunkt Ã¤ndern, dann auflÃ¶sen
              (command "._EXPLODE" e)
 	     (prompt "x")
 	))
