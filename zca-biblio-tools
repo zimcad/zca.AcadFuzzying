@@ -21,6 +21,14 @@
  erglst
 )
 
+(defun ZCA:RANDOM-NUMBER (/)
+  ;; Pseudo-random number genterator based on MSVC 4.1 function 'rand'.
+  ;; Initialize seed for the RNG
+  (if (not SEEDRAND) (setq SEEDRAND 1)) ;_ end of if
+  (setq SEEDRAND (+ (* (fix SEEDRAND) 214013) 2531011))
+  (boole 1 (/ SEEDRAND 65536) 32767)
+) ;_ end of defun
+
 (defun zca:editattr (att st obj /  sub subd)
 
 ;;  (*push-error-using-command*)
